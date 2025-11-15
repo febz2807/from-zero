@@ -1,28 +1,32 @@
-print("=== PROGRAM PENENTU NILAI HURUF ===")
-nilai = int(input("Masukkan nilai kamu (0-100): "))
+print("=== PENGAMBILAN NILAI ===")
+nilai = int(input("Masukkan nilai (0-100): "))
 
 if nilai < 0 or nilai > 100:
     print("Nilai tidak valid!")
 elif nilai >= 95 and 100:
     grade = ("A+")
-elif nilai >= 90 and 94:
+    komentar = ("Luar biasa!")
+elif nilai >= 85 and 90:
     grade = ("A")
-elif nilai >= 85 and 89:
-    grade = ("B+")
+    komentar = ("Sangat baik")
 elif nilai >= 75 and 80:
-    grade = ("B")
+    grade = ("B+")
+    komentar = ("Cukup baik")
 elif nilai >= 65 and 70:
-    grade = ("C+")
+    grade = ("B")
+    komentar = ("cukup")
 elif nilai >= 55 and 60:
-    grade = ("C")
+    garde = ("C")
+    komentar = ("Kurang baik")
 else:
     grade = ("E")
+    komentar = ("Mengulang")
 
 print(f"Nilai kamu: {nilai}")
 print(f"Grade: {grade}")
+print(f"Komentar: {komentar}")
 
-# Waktu
-print("=== WAKTU PERHITUNGAN DILAKUKAN ===")
+print("=== TANGGAL NILAI DICATAT ===")
 import datetime
 now = datetime.datetime.now()
 print("Perhitungan dilakukan pada:", now)
