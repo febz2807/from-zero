@@ -43,3 +43,7 @@ nama = input("Masukkan nama kamu: ")
 hobi = input("Masukkan hobi kamu: ")
 
 print("halo " + nama + ", kamu suka " + hobi)
+
+import datetime
+now = datetime.datetime.now()
+print("Perhitungan dilakukkan pada:", now)
